@@ -110,12 +110,18 @@
       <groupId>org.springframework.restdocs</groupId>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-dependency-plugin</artifactId>
+      <version>3.1.2</version>
+    </dependency>
+    <!--JAVADOC AND SOURCES-->
   </dependencies>
   <description>Reddit Clone</description>
   <groupId>com.vega</groupId>
   <modelVersion>4.0.0</modelVersion>
   <name>springit</name>
-
   <parent>
     <artifactId>spring-boot-starter-parent</artifactId>
     <groupId>org.springframework.boot</groupId>

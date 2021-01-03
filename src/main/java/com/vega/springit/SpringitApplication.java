@@ -20,7 +20,7 @@ public class SpringitApplication {
     SpringApplication.run(SpringitApplication.class, args);
   }
 
-//  @Bean
+  @Bean
   CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
     return args -> {
       Link link = new Link("Getting Started...", "danvega.com/spring");
@@ -40,6 +40,10 @@ public class SpringitApplication {
       link.removeComment(comment2);
 
       linkRepository.save(link);
+
+      Link link1 = linkRepository.findByTitle("Getting Started...");
+
+      System.out.println(link1);
     };
   }
 }
